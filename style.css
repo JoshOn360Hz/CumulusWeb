@@ -106,7 +106,6 @@ body {
   position: relative;
 
   overflow: hidden;
-  position: relative;
 }
 
 .hero-section::after {
@@ -291,6 +290,12 @@ body {
 .reveal-text.visible {
   opacity: 1;
   transform: translateY(0);
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;  
 }
 
 .image-reveal-container {
