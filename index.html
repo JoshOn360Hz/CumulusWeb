@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cumulus</title>    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="src/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+  <link rel="shortcut icon" href="src/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Cumulus" />
+  <link rel="manifest" href="src/site.webmanifest" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Cumulus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#privacy">Privacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="mailto:JoshCumulus@proton.me?subject=Contacting%20Cumulus&body=Hi%2C%20I%20have%20a%20question...">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <section id="hero" class="hero-section">
+    <div class="hero-content always-visible">
+      <img src="src/logo.png" alt="Cumulus Icon" class="app-icon floating always-visible">
+      <h1 class="hero-title always-visible">Simple. Clean.<br><span class="text-gradient always-visible">Weather.</span></h1>
+      <p class="hero-subtitle always-visible">Experience weather forecasting like never before on iOS, WatchOS, iPadOS & MacOS</p>
+      <a href="https://apps.apple.com/us/app/cumulus/id6742735497" target="_blank" class="download-btn always-visible">
+        <i class="bi bi-apple"></i>
+        Download
+      </a>
+        
+       <a href="https://testflight.apple.com/join/3FTY37Fg" target="_blank" class="download-btn always-visible">
+        <i class="bi bi-apple"></i>
+        Testflight Beta
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <section id="screenshots" class="screenshots-section">
+    <div class="parallax-container">
+      <div class="text-reveal-section">
+        <h2 class="reveal-text">Simple.</h2>
+        <h2 class="reveal-text">Clean.</h2>
+        <h2 class="reveal-text">Weather.</h2>
+      </div>      <div class="image-reveal-container">
+        <img src="src/sc1.png" alt="Screenshot 1" class="reveal-image" data-reveal="0">
+        <img src="src/sc2.png" alt="Screenshot 2" class="reveal-image" data-reveal="2">
+        <img src="src/sc3.png" alt="Screenshot 3" class="reveal-image" data-reveal="1">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="text-content">
+            <h2 class="section-title">Built with <span class="text-gradient">SwiftUI</span></h2>
+            <p class="section-description">
+              Cumulus is crafted entirely with SwiftUI, Apple's modern declarative UI framework. 
+              This means lightning-fast performance, seamless animations, and a truly native experience 
+              across all your Apple devices.
+            </p>
+            <div class="feature-highlights">
+              <div class="highlight-item">
+                <i class="bi bi-lightning-charge"></i>
+                <span>Lightning Fast</span>
+              </div>
+              <div class="highlight-item">
+                <i class="bi bi-phone"></i>
+                <span>Native Experience</span>
+              </div>
+             
+            </div>
+          </div>
+        </div>      
+        <div class="col-lg-6">
+          <div class="image-container">
+            <img src="src/swiftui.png" alt="SwiftUI" class="floating-image always-visible">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Why Choose <span class="text-gradient">Cumulus</span>?</h2>
+        <p class="section-subtitle">Three simple reasons that make all the difference</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-currency-dollar"></i>
+          </div>
+          <h3>Free Forever</h3>
+          <p>No accounts. No ads. No subscriptions. Cumulus is 100% free and always will be.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <h3>Privacy First</h3>
+          <p>Everything stays on your device. No tracking, no data collection, no compromises.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-cloud-sun"></i>
+          </div>
+          <h3>WeatherKit</h3>
+          <p>Powered by Apple's WeatherKit for hyperlocal and accurate forecasts straight from the source.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" class="privacy-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="text-content">
+            <h2 class="section-title">Your Privacy is <span class="text-gradient">Important</span></h2>
+            <p class="section-description">
+              In a world where your data is constantly harvested, Cumulus takes a different approach. 
+              We believe your location and weather data are yours alone.
+            </p>
+            <div class="privacy-features">
+              <div class="privacy-item">
+                <i class="bi bi-shield-check"></i>
+                <div>
+                  <h4>No Tracking</h4>
+                  <p>Zero analytics, ads, or third-party libraries</p>
+                </div>
+              </div>
+              <div class="privacy-item">
+                <i class="bi bi-person-x"></i>
+                <div>
+                  <h4>No Accounts</h4>
+                  <p>No sign-ups, logins, or personal information required</p>
+                </div>
+              </div>
+              <div class="privacy-item">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <h4>Location Stays Local</h4>
+                  <p>Your location is only used to fetch the weather and never leaves your device</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="image-container">
+            <div class="privacy-visual">
+              <div class="shield-icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Cumulus. All rights reserved.</p>
+        <p>Made with ❤️ by Josh</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
