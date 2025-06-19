@@ -46,7 +46,7 @@ body {
 }
 
 .accessibility-section {
-  background: linear-gradient(180deg, #b6e4ff 0%, #e6f3ff 100%);
+  background: linear-gradient(180deg, #b6e4ff 0%, #818181 100%);
 }
 
 .navbar {
@@ -548,7 +548,7 @@ body {
 
 
 .footer {
-  background:#2f579c;
+  background:#818181;
   padding: 3rem 0;
   text-align: center;
   backdrop-filter: blur(20px);
