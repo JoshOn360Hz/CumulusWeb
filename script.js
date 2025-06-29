@@ -1,20 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation Setup
     setupMobileNavigation();
     
-    // Scroll Animations
     setupScrollAnimations();
     
-    // Navbar Scroll Behavior
     setupNavbarBehavior();
     
-    // Smooth Scrolling for Navigation Links
     setupSmoothScrolling();
     
-    // Preload Images
     preloadImages();
     
-    // Setup Accessibility
     setupAccessibility();
 });
 
@@ -57,7 +51,6 @@ function setupMobileNavigation() {
         });
     });
 
-    // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
             hamburger.classList.remove('active');
@@ -82,7 +75,6 @@ function setupScrollAnimations() {
         });
     }, observerOptions);
 
-    // Observe elements that should animate on scroll
     const animateElements = document.querySelectorAll('.feature-card, .accessibility-card, .screenshot-item');
     animateElements.forEach(card => {
         card.style.opacity = '0';
@@ -99,7 +91,6 @@ function setupNavbarBehavior() {
     window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
         
-        // Hide navbar on scroll down, show on scroll up
         if (currentScrollY > lastScrollY && currentScrollY > 100) {
             navbar.style.transform = 'translateY(-100%)';
         } else {
@@ -146,7 +137,6 @@ function preloadImages() {
 }
 
 function setupAccessibility() {
-    // Keyboard navigation support
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Tab') {
             document.body.classList.add('using-keyboard');
@@ -157,7 +147,6 @@ function setupAccessibility() {
         document.body.classList.remove('using-keyboard');
     });
 
-    // Add focus styles for keyboard navigation
     const style = document.createElement('style');
     style.textContent = `
         .using-keyboard *:focus {
@@ -174,7 +163,6 @@ function setupAccessibility() {
     document.head.appendChild(style);
 }
 
-// Handle window resize for mobile navigation
 window.addEventListener('resize', () => {
     const navMenu = document.querySelector('.nav-menu');
     const hamburger = document.querySelector('.hamburger');
@@ -186,7 +174,6 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Enhanced button interactions
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.download-button, .beta-button, .feature-card, .accessibility-card');
     
@@ -201,7 +188,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Progress bar for page loading
 window.addEventListener('load', () => {
     const progressBar = document.createElement('div');
     progressBar.style.cssText = `

@@ -894,3 +894,141 @@ body {
         display: none !important;
     }
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  .navbar {
+    background: rgba(26, 26, 26, 0.95);
+    border-bottom: 1px solid #333;
+  }
+
+  .nav-logo h1,
+  .nav-link {
+    color: #e0e0e0;
+  }
+
+  .nav-link:hover {
+    color: #3498db;
+  }
+
+  .hamburger span {
+    background: #e0e0e0;
+  }
+
+  .navbar.scrolled {
+    background: rgba(26, 26, 26, 0.98);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar.scrolled .nav-logo h1,
+  .navbar.scrolled .nav-link,
+  .navbar.scrolled .hamburger span {
+    color: #e0e0e0;
+  }
+
+  .nav-menu {
+    background: rgba(26, 26, 26, 0.98);
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
+  }
+
+  .features-section,
+  .privacy-section,
+  .accessibility-section {
+    background: #1e1e1e;
+  }
+
+  .screenshots-section {
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+  }
+
+  .section-header h2 {
+    color: #e0e0e0;
+  }
+
+  .section-header p {
+    color: #b0b0b0;
+  }
+
+  .feature-card,
+  .privacy-card,
+  .accessibility-card,
+  .tech-card
+  {
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .feature-card:hover,
+  .privacy-card:hover,
+  .accessibility-card:hover,
+  .tech-card:hover:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .feature-card h3,
+  .privacy-card h3,
+  .accessibility-card h3,
+  .tech-card h3 {
+    color: #e0e0e0;
+  }
+
+  .feature-card p,
+  .privacy-card p,
+  .accessibility-card p,
+  .tech-card p {
+    color: #b0b0b0;
+  }
+
+  .tech-stack-header p {
+    color: #b0b0b0;
+  }
+
+  .footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+  }
+
+  .footer-content p {
+    color: #b0b0b0;
+  }
+
+  .accessibility-card i {
+    color: #667eea;
+  }
+
+  .tech-icon i {
+    color: #ffffff;
+  }
+
+  .nav-link:focus,
+  .download-button:focus,
+  .beta-button:focus {
+    outline: 2px solid #667eea;
+  }
+
+  @media (prefers-contrast: high) {
+    body {
+      background: #000;
+      color: #fff;
+    }
+
+    .feature-card,
+    .privacy-card,
+    .accessibility-card,
+    .tech-card {
+      background: #000;
+      border: 2px solid #fff;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.98);
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
