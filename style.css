@@ -1006,11 +1006,7 @@ body {
     color: #ffffff;
   }
 
-  .nav-link:focus,
-  .download-button:focus,
-  .beta-button:focus {
-    outline: 2px solid #667eea;
-  }
+  
 
   @media (prefers-contrast: high) {
     body {
