@@ -3,225 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cumulus</title>    
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <link href="style.css" rel="stylesheet">
-<link rel="icon" type="image/png" href="/src/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-<link rel="shortcut icon" href="/src/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="CumulusWeb" />
-<link rel="manifest" href="/src/site.webmanifest" />
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Cumulus</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#privacy">Privacy</a></li>
-          <li class="nav-item"><a class="nav-link" href="mailto:JoshCumulus@proton.me?subject=Contacting%20Cumulus&body=Hi%2C%20I%20have%20a%20question...">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>  
-  <section id="hero" class="hero-section">
-    <div class="hero-content always-visible ">
-      <div class="hero-text fade-in-up">
-      <img src="src/logo.png" alt="Cumulus Icon" class="app-icon floating always-visible">
-      <h1 class="hero-title always-visible">Simple. Clean.<br><span class="text-gradient always-visible">Weather.</span></h1>
-      <p class="hero-subtitle always-visible">Experience weather forecasting like never before on iOS, WatchOS, iPadOS & MacOS</p>
-      
-      <a href="https://apps.apple.com/us/app/cumulus/id6742735497" target="_blank" class="download-btn ">
-        <i class="bi bi-apple"></i>
-        Download
-      </a>
-       <a href="https://testflight.apple.com/join/3FTY37Fg" target="_blank" class="download-btn ">
-        <i class="bi bi-apple"></i>
-        Testflight Beta
-      </a>
-    </div>
-     </div>
-  </section>
+  <title>Cumulus - Beautiful Weather for iOS</title>
+  <meta name="description" content="Cumulus is a simple, Vision OS inspired weather app available on iOS, iPadOS and macOS. Experience beautiful weather visualization with a clean, modern interface.">
   
-  <section id="screenshots" class="screenshots-section">
-    <div class="parallax-container">
-      <div class="text-reveal-section">
-        <h2 class="reveal-text">Simple.</h2>
-        <h2 class="reveal-text">Clean.</h2>
-        <h2 class="reveal-text">Weather.</h2>
-      </div>      <div class="image-reveal-container">
-        <img src="src/sc1.png" alt="Screenshot 1" class="reveal-image" data-reveal="0">
-        <img src="src/sc2.png" alt="Screenshot 2" class="reveal-image" data-reveal="2">
-        <img src="src/sc3.png" alt="Screenshot 3" class="reveal-image" data-reveal="1">
-      </div>
-    </div>
-  </section>
+  <link rel="icon" type="image/png" href="src/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+  <link rel="shortcut icon" href="src/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Cumulus" />
+  <link rel="manifest" href="src/site.webmanifest" />
+  
+  <link rel="preload" as="image" href="src/logo.png">
+  <link rel="preload" as="image" href="src/sc1.png">
+  <link rel="preload" as="image" href="src/sc2.png">
+  <link rel="preload" as="image" href="src/sc3.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <section id="about" class="about-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="text-content fade-in-left">
-            <h2 class="section-title">Built with <span class="text-gradient">SwiftUI</span></h2>
-            <p class="section-description">
-              Cumulus is crafted entirely with SwiftUI, Apple's modern declarative UI framework. 
-              This means lightning-fast performance, seamless animations, and a truly native experience 
-              across all your Apple devices.
-            </p>
-            <div class="feature-highlights">
-              <div class="highlight-item">
-                <i class="bi bi-lightning-charge"></i>
-                <span>Lightning Fast</span>
-              </div>
-              <div class="highlight-item">
-                <i class="bi bi-phone"></i>
-                <span>Native Experience</span>
-              </div>
-             
-            </div>
-          </div>
-        </div>      
-        <div class="col-lg-6">
-          <div class="image-container fade-in-up">
-            <img src="src/swiftui.png" alt="SwiftUI" class="floating-image always-visible">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="features" class="features-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title fade-in-up">Why Choose <span class="text-gradient">Cumulus</span>?</h2>
-        <p class="section-subtitle fade-in-up">Three simple reasons that make all the difference</p>
+  <meta property="og:title" content="Cumulus - Beautiful Weather for iOS">
+  <meta property="og:description" content="Experience weather forecasting like never before with our Vision OS inspired design on iOS, iPadOS, WatchOS and macOS.">
+  <meta property="og:type" content="website">
+</head>
+<<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h1>Cumulus</h1>
       </div>
       
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#privacy" class="nav-link">Privacy</a>
+        <a href="mailto:JoshCumulus@proton.me?subject=Contacting%20Cumulus&body=Hi%2C%20I%20have%20a%20question..." class="nav-link">Contact</a>
+      </div>
+      
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    
+    <div class="hero-content">
+      <img src="src/logo.png" alt="Cumulus App Icon" class="app-icon-hero">
+      <h1 class="hero-title">
+        <span class="line">Simple. Clean.</span>
+        <span class="line"><span class="text-gradient">Weather.</span></span>
+      </h1>
+      <p class="hero-subtitle">
+        Experience weather forecasting like never before with our Vision OS inspired design on iOS, iPadOS, WatchOS and macOS.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://apps.apple.com/us/app/cumulus/id6742735497" target="_blank" class="download-button">
+          <i class="fab fa-apple"></i> Download on App Store
+        </a>
+        <a href="https://testflight.apple.com/join/3FTY37Fg" target="_blank" class="beta-button">
+          <i class="fas fa-flask"></i> TestFlight Beta
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="features" class="features-section">
+    <div class="section-header">
+      <h2>Why Choose Cumulus?</h2>
+      <p>Three simple reasons that make all the difference</p>
+    </div>
+    
+    <div class="features-container">
       <div class="features-grid">
-        <div class="feature-card fade-in-up">
+        <div class="feature-card">
           <div class="feature-icon">
-            <i class="bi bi-currency-dollar"></i>
+            <i class="fas fa-gift"></i>
           </div>
           <h3>Free Forever</h3>
           <p>No accounts. No ads. No subscriptions. Cumulus is 100% free and always will be.</p>
         </div>
         
-        <div class="feature-card fade-in-up">
+        <div class="feature-card">
           <div class="feature-icon">
-            <i class="bi bi-person-fill"></i>
+            <i class="fas fa-shield-alt"></i>
           </div>
           <h3>Privacy First</h3>
           <p>Everything stays on your device. No tracking, no data collection, no compromises.</p>
         </div>
         
-        <div class="feature-card fade-in-up">
+        <div class="feature-card">
           <div class="feature-icon">
-            <i class="bi bi-cloud-sun"></i>
+            <i class="fas fa-cloud-rain"></i>
           </div>
-          <h3>WeatherKit</h3>
+          <h3>WeatherKit Powered</h3>
           <p>Powered by Apple's WeatherKit for hyperlocal and accurate forecasts straight from the source.</p>
         </div>
+      </div>
+      
+      <div class="tech-stack-header">
+        <p>Cumulus Leverages cutting-edge Apple technologies for an exceptional experience</p>
+      </div>
+      
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon">
+            <img src="src/swiftui.png" alt="SwiftUI" class="tech-logo">
+          </div>
+          <h3>SwiftUI</h3>
+          <p>Modern, declarative UI framework for building beautiful interfaces across all Apple platforms</p>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-icon">
+          <i class="fa-solid fa-cloud"></i>
+          </div>
+          <h3>WeatherKit</h3>
+          <p>Apple's powerful weather data service delivering hyperlocal forecasts with exceptional accuracy</p>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>WatchKit</h3>
+          <p>Native Apple Watch integration bringing weather information right to your wrist</p>
+        </div>
+        
+        <div class="tech-card">
+          <div class="tech-icon">
+            <i class="fas fa-th-large"></i>
+          </div>
+          <h3>WidgetKit</h3>
+          <p>Beautiful home screen widgets that keep you informed at a glance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section id="screenshots" class="screenshots-section">
+    <div class="section-header">
+      <h2>See Cumulus in Action</h2>
+      <p>Beautiful weather visualization with a clean, modern interface</p>
+    </div>
+    <div class="screenshots-container">
+      <div class="screenshot-item">
+        <img src="src/sc1.png" alt="Cumulus Weather Overview" class="screenshot-img">
+      </div>
+      <div class="screenshot-item">
+        <img src="src/sc2.png" alt="Cumulus Detailed Forecast" class="screenshot-img">
+      </div>
+      <div class="screenshot-item">
+        <img src="src/sc3.png" alt="Cumulus Settings" class="screenshot-img">
       </div>
     </div>
   </section>
 
   <section id="privacy" class="privacy-section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-2">
-          <div class="text-content fade-in-right">
-            <h2 class="section-title">Your Privacy is <span class="text-gradient-alt">Important</span></h2>
-            <p class="section-description">
-              In a world where your data is constantly harvested, Cumulus takes a different approach. 
-              We believe your location and weather data are yours alone.
-            </p>
-            <div class="privacy-features">
-              <div class="privacy-item">
-                <i class="bi bi-shield-check"></i>
-                <div>
-                  <h4>No Tracking</h4>
-                  <p>Zero analytics, ads, or third-party libraries</p>
-                </div>
-              </div>
-              <div class="privacy-item">
-                <i class="bi bi-person-x"></i>
-                <div>
-                  <h4>No Accounts</h4>
-                  <p>No sign-ups, logins, or personal information required</p>
-                </div>
-              </div>
-              <div class="privacy-item">
-                <i class="bi bi-geo-alt"></i>
-                <div>
-                  <h4>Location Stays Local</h4>
-                  <p>Your location is only used to fetch the weather and never leaves your device</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="image-container">
-            <div class="privacy-visual">
-              <div class="shield-icon">
-                <i class="bi bi-shield-lock"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="section-header">
+      <h2>Your Privacy is <span class="text-gradient">Important</span></h2>
+      <p>In a world where your data is constantly harvested, Cumulus takes a different approach. We believe your location and weather data are yours alone.</p>
+    </div>
+    
+    <div class="privacy-grid">
+      <div class="privacy-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>No Tracking</h3>
+        <p>Zero analytics, ads, or third-party libraries</p>
+      </div>
+      
+      <div class="privacy-card">
+        <i class="fas fa-user-slash"></i>
+        <h3>No Accounts</h3>
+        <p>No sign-ups, logins, or personal information required</p>
+      </div>
+      
+      <div class="privacy-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location Stays Local</h3>
+        <p>Your location is only used to fetch weather and never leaves your device</p>
       </div>
     </div>
   </section>
-  <section id="Accessibility" class="accessibility-section">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title fade-in-up">Built for <span class="text-gradient-alt">Everyone</span></h2>
-        <p class="section-subtitle fade-in-up">Accessibility isn't an afterthought. It's fundamental</p>
+
+  <section id="accessibility" class="accessibility-section">
+    <div class="section-header">
+      <h2>Built for <span class="text-gradient">Everyone</span></h2>
+      <p>Accessibility isn't an afterthought. It's fundamental to great design.</p>
+    </div>
+    
+    <div class="accessibility-grid">
+      <div class="accessibility-card">
+        <i class="fas fa-volume-up"></i>
+        <h3>VoiceOver</h3>
+        <p>Full compatibility with screen readers and assistive technologies</p>
       </div>
       
-      <div class="accessibility-grid">
-        <div class="accessibility-card fade-in-up" data-delay="0">
-          <i class="bi bi-soundwave"></i>
-          <h3>VoiceOver</h3>
-          <p>Full compatibility with screen readers and assistive technologies</p>
-        </div>
-        
-        <div class="accessibility-card fade-in-up" data-delay="150">
-          <i class="bi bi-mic"></i>
-          <h3>Voice Control</h3>
-          <p>Navigate and control the app using voice commands</p>
-        </div>
-        
-        <div class="accessibility-card fade-in-up" data-delay="300">
-          <i class="bi bi-palette"></i>
-          <h3>Visual Clarity</h3>
-          <p>Clear visual indicators that don't rely on color alone</p>
-        </div>
-        
-        <div class="accessibility-card fade-in-up" data-delay="450">
-          <i class="bi bi-fonts"></i>
-          <h3>Dynamic Type</h3>
-          <p>Adjustable text size for optimal readability</p>
-        </div>
+      <div class="accessibility-card">
+        <i class="fas fa-microphone"></i>
+        <h3>Voice Control</h3>
+        <p>Navigate and control the app using voice commands</p>
+      </div>
+      
+      <div class="accessibility-card">
+        <i class="fas fa-eye"></i>
+        <h3>Visual Clarity</h3>
+        <p>Clear visual indicators that don't rely on color alone</p>
+      </div>
+      
+      <div class="accessibility-card">
+        <i class="fas fa-text-height"></i>
+        <h3>Dynamic Type</h3>
+        <p>Adjustable text size for optimal readability</p>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2025 Cumulus. All rights reserved.</p>
-        <p>Made with ❤️ by Josh</p>
-      </div>
+    <div class="footer-content">
+      <p>&copy; 2025 Cumulus. All rights reserved.</p>
+      <p>Made with ❤️ by Josh </p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
